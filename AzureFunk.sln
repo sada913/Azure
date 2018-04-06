@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunk", "AzureFunk\AzureFunk.csproj", "{AF25295F-F787-4238-AD6C-DD134C472AF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF25295F-F787-4238-AD6C-DD134C472AF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF25295F-F787-4238-AD6C-DD134C472AF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF25295F-F787-4238-AD6C-DD134C472AF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF25295F-F787-4238-AD6C-DD134C472AF3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {99C05FE7-96FB-4DBF-8405-0B7ECB2978BC}
+	EndGlobalSection
+EndGlobal
