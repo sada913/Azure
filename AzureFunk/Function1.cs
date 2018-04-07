@@ -20,6 +20,7 @@ namespace AzureFunk
                 .FirstOrDefault(q => string.Compare(q.Key, "name", true) == 0)
                 .Value;
 
+            //dajo
             // Get request body
             dynamic data = await req.Content.ReadAsAsync<object>();
 
