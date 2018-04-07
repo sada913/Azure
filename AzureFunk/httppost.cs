@@ -16,7 +16,7 @@ namespace AzureFunk
     public static class httppost
     {
         [FunctionName("httppost")]
-        public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Function, "post")]HttpRequestMessage req, [Table("person", Connection = "")]ICollector<Person> outTable, TraceWriter log)
+        public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Function, "post")]HttpRequestMessage req, [Table("person", Connection = "")]ICollector<Person> outTable, [Table("person2", Connection = "")]ICollector<Person> outTable2, TraceWriter log)
         {
             dynamic data = await req.Content.ReadAsAsync<object>();
             string name = data?.name;
@@ -57,7 +57,7 @@ namespace AzureFunk
             };
             outTable.Add(p);
             //tableストレージに格納
-
+            outTable2.Add(p);
 
 
             return req.CreateResponse(HttpStatusCode.Created,p);
